@@ -1,0 +1,9 @@
+body{
+    background-color: #af6aff;
+}
+.header{
+    width: 100%;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    background-color: #af6aff;
+}
