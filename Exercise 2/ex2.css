@@ -1,5 +1,4 @@
 body{
-    /* background-color: #af6aff; */
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQonLxSVQQfRzFpkK6WAJH3w0NvowKLCB7wzmQmTaOnEntrwNqnz5KsVU3uKfeQN23kpCI&usqp=CAU");
 }
 .header{
@@ -8,5 +7,4 @@ body{
     background-color: rgb(255 255 255 / 30%);
     backdrop-filter: blur(3px);
 }
-.header > h1{
-}
+
