@@ -2,11 +2,13 @@
     width: 100%;
     height: auto;
     display: flex;
+    background-color: black;
 }
 
 .sub1{
     text-align: center;
     margin: 10px;
+    margin-right: 0;
     width: 20%;
     height: 450px;
     background-color: rgb(131, 229, 247);
