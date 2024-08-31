@@ -10,6 +10,8 @@
     width: 20%;
     height: 450px;
     background-color: rgb(131, 229, 247);
+    display: flex;
+    flex-direction: column;
 }
 
 .sub2{
