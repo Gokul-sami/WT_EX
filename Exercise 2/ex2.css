@@ -25,3 +25,6 @@ body{
     margin-bottom: 0px;
     color: rgba(0, 0, 0, 0.525);
 }
+.popular:hover{
+    color: rgb(143, 54, 252);
+}
