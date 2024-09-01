@@ -14,13 +14,11 @@ body{
     flex-wrap: wrap;
     gap: 10px;
 }
-.popular-song-name{
+.popular-song-name, .popular-singer-name{
     margin-top: 0px;
     margin-bottom: 0px;
 }
 .popular-singer-name{
-    margin-top: 0px;
-    margin-bottom: 0px;
     color: rgba(0, 0, 0, 0.525);
 }
  *{
