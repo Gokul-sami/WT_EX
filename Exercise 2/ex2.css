@@ -17,6 +17,7 @@ body{
 .popular-song-name, .popular-singer-name{
     margin-top: 0px;
     margin-bottom: 0px;
+    word-wrap: normal;
 }
 .popular-singer-name{
     color: rgba(0, 0, 0, 0.525);
