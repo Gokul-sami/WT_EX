@@ -1,15 +1,13 @@
 body{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQonLxSVQQfRzFpkK6WAJH3w0NvowKLCB7wzmQmTaOnEntrwNqnz5KsVU3uKfeQN23kpCI&usqp=CAU");
+    background-color: rgb(192, 141, 255);
 }
 .header{
     text-align: center;
     padding: 10px;
     background-color: rgb(255 255 255 / 30%);
-    backdrop-filter: blur(3px);
 }
 .popular-section{
     background-color: rgb(255 255 255 / 30%);
-    backdrop-filter: blur(3px);
 }
 .popular-songs{
     display: flex;
@@ -25,6 +23,7 @@ body{
     margin-bottom: 0px;
     color: rgba(0, 0, 0, 0.525);
 }
-.popular:hover{
+ *{
     color: rgb(143, 54, 252);
-}
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
