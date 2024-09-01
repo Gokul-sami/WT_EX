@@ -7,4 +7,20 @@ body{
     background-color: rgb(255 255 255 / 30%);
     backdrop-filter: blur(3px);
 }
-
+.popular-section{
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(3px);
+}
+.popular-songs{
+    display: flex;
+    gap: 10px;
+}
+.popular-song-name{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.popular-singer-name{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgba(0, 0, 0, 0.525);
+}
