@@ -11,14 +11,19 @@
     margin-right: 0;
     width: 20%;
     height: 450px;
-    background-color: rgb(131, 151, 253);
+    background-color: rgb(173, 186, 254);
     display: flex;
     flex-direction: column;
 }
-
+.sub1 > a{
+    text-decoration: none;
+}
+.sub1 > a:hover{
+    text-decoration: underline;
+}
 .sub2{
     margin: 10px;
     width: 80%;
     height: 450px;
-    background-color: rgb(131, 151, 253);
+    background-color: rgb(173, 186, 254);
 }
