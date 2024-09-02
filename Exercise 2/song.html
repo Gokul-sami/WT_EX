@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Details</title>
+    <link rel="stylesheet" href="song.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Song Image -->
+        <div class="song-image">
+            <img id="song-cover" src="" alt="Song Cover">
+        </div>
+        
+        <!-- Song Details -->
+        <div class="song-details">
+            <h1 id="song-title">Song Title</h1>
+            <h3 id="song-artist">Artist Name</h3>
+        </div>
+
+        <!-- Additional Content -->
+        <div class="song-lyrics">
+            <h2>Lyrics</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
+                Cras venenatis euismod malesuada. Curabitur lacinia neque et lectus facilisis fringilla. Aenean vel dui mi.
+            </p>
+        </div>
+    </div>
+
+    
+    <script>
+        window.onload = function() {
+            const hash = window.location.hash.substring(1);
+            
+            const [title, artist, image] = hash.split('!');
+            
+            document.getElementById('song-title').textContent = title.replace(/_/g, ' ');
+            document.getElementById('song-artist').textContent = artist.replace(/_/g, ' ');
+            document.getElementById('song-cover').src = image;
+        };
+    </script>
+    
+</body>
+</html>

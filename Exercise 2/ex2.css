@@ -12,6 +12,7 @@ body{
 .popular-songs{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 10px;
 }
 .popular-song-name, .popular-singer-name{
@@ -26,3 +27,7 @@ body{
     color: rgb(143, 54, 252);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
+.cover:hover {
+        transform: translateY(-5px);
+        transition: transform 80ms;
+}
