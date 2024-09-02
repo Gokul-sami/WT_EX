@@ -148,7 +148,7 @@
 
     <!-- Right-side Song Details Container -->
     <div id="song-details-container" class="song-details-container">
-        <span class="close-button" onclick="closeSongDetails()" style="padding: 5px;">X</span>
+        <span class="close-button" onclick="closeSongDetails()" style="margin-bottom: 20px;">X</span>
         <div class="song-image">
             <img id="song-cover" src="" alt="Song Cover" style="width: 100%;">
         </div>
@@ -156,12 +156,8 @@
             <h1 id="song-title">Song Title</h1>
             <h3 id="song-artist">Artist Name</h3>
         </div>
-        <div class="song-lyrics">
-            <h2>Lyrics</h2>
+        <div class="song-audio">
             <audio controls id="song-audio"></audio>
-            <p id="song-lyrics">
-                Lyrics will appear here.
-            </p>
         </div>
     </div>
 
@@ -173,7 +169,6 @@
         document.getElementById('song-artist').textContent = artist.replace(/_/g, ' ');
         document.getElementById('song-cover').src = image;
         document.getElementById('song-audio').src = "https://pagalnew.com.se/files/download/id/2016"; // Update with actual audio URL if available
-        document.getElementById('song-lyrics').textContent = "Lyrics for " + title + " go here..."; // Update lyrics dynamically
 
         // Show the song details container
         document.getElementById('song-details-container').style.display = 'block';
