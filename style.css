@@ -1,29 +1,45 @@
-.main{
-    width: 100%;
-    height: auto;
-    display: flex;
-    background-color: black;
-}
-
-.sub1{
-    text-align: center;
-    margin: 10px;
-    margin-right: 0;
-    width: 20%;
-    height: 450px;
-    background-color: rgb(180, 137, 255);
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: #7827e7;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif, cursive;
 }
-.sub1 > a{
-    text-decoration: none;
+
+.main {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.sub1 > a:hover{
-    text-decoration: underline;
-}
-.sub2{
-    margin: 10px;
-    width: 80%;
-    height: 450px;
+
+.sub {
+    width: 100%;
     background-color: rgb(180, 137, 255);
+    padding: 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
+
+.sub a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sub > a:hover {
+    background-color: rgb(0, 0, 0);
+    color: #7827e7;
+}
+
