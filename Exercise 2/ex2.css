@@ -48,31 +48,19 @@ body{
     transition: transform 0.1s ease-in-out;
 }
 
-/* Close Button */
-.close-button {
-    background-color: rgb(152, 144, 144);
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    float: right;
-
+.close-button{
+    width: 1.5rem; 
 }
 
-.close-button:hover {
-    background-color: #ff0000;
+.close-button:hover{
+    transform: translateY(-2px);
 }
 
-/* Song Image */
 .song-image img {
     width: 215px;
     border-radius: 10px;
 }
 
-/* Song Details */
 .song-details {
     margin-top: 20px;
     text-align: center;
@@ -90,7 +78,6 @@ body{
     color: rgb(147, 142, 142);
 }
 
-/* Song Audio Player */
 .song-audio {
     margin-top: 20px;
     text-align: center;
