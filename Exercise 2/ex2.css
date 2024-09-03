@@ -46,7 +46,6 @@ body{
 
 
 
-
 /* CVS */
 
 /* 7827e7,8d3aec,a94ff5,ea7ffc */
@@ -62,3 +61,57 @@ body{
 /* Array with # */
 
 /* ["#7827e7", "#8d3aec", "#a94ff5", "#ea7ffc"] */
+
+
+
+/* Close Button */
+.close-button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    float: right;
+}
+
+.close-button:hover {
+    background-color: #cc0000;
+}
+
+/* Song Image */
+.song-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Song Details */
+.song-details {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.song-details h1 {
+    font-size: 28px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.song-details h3 {
+    font-size: 22px;
+    margin: 5px 0;
+    color: #777;
+}
+
+/* Song Audio Player */
+.song-audio {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.song-audio audio {
+    width: 100%;
+    outline: none;
+}
