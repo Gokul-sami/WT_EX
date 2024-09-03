@@ -1,13 +1,13 @@
 body{
-    background-color: rgb(192, 141, 255);
+    background-color: rgb(0, 0, 0);
 }
 .header{
     text-align: center;
     padding: 10px;
-    background-color: rgb(255 255 255 / 30%);
+    /* background-color: rgb(255 255 255 / 30%); */
 }
 .popular-section{
-    background-color: rgb(255 255 255 / 30%);
+    /* background-color: rgb(255 255 255 / 30%); */
 }
 .popular-songs{
     display: flex;
@@ -21,35 +21,21 @@ body{
     word-wrap: normal;
 }
 .popular-singer-name{
-    color: rgba(0, 0, 0, 0.525);
+    color: rgb(152, 144, 144);
 }
  *{
-    color: rgb(143, 54, 252);
+    color: #7827e7;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .cover{
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10%;
  }
 .cover:hover {
         transform: translateY(-5px);
         transition: transform 80ms;
 }
-
-
-
-/* CVS */
-
-/* 7827e7,8d3aec,a94ff5,ea7ffc */
-
-/* CVS with # */
-
-/* #7827e7,#8d3aec,#a94ff5,#ea7ffc */
-
-/* Array */
-
-/* ["7827e7", "8d3aec", "a94ff5", "ea7ffc"] */
-
-/* Array with # */
-
-/* ["#7827e7", "#8d3aec", "#a94ff5", "#ea7ffc"] */
-
 
 
 /* Song Details Container */
