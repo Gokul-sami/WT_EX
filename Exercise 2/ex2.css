@@ -31,18 +31,6 @@ body{
         transform: translateY(-5px);
         transition: transform 80ms;
 }
-.song-details-container {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 30%;
-    height: 100%;
-    background-color: rgb(192, 141, 255);
-    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
-    display: none; /* Hidden by default */
-    padding: 20px;
-    overflow-y: auto;
-}
 
 
 
@@ -63,6 +51,22 @@ body{
 /* ["#7827e7", "#8d3aec", "#a94ff5", "#ea7ffc"] */
 
 
+
+/* Song Details Container */
+.song-details-container {
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    z-index: 1000;
+    display: none; /* Hidden by default, will be shown with JS */
+    transition: transform 0.3s ease-in-out;
+}
 
 /* Close Button */
 .close-button {
