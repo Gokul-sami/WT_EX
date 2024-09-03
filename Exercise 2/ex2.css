@@ -11,6 +11,9 @@ body{
     justify-content: space-evenly;
     gap: 10px;
 }
+.popular-song-name{
+    color: white;
+}
 .popular-song-name, .popular-singer-name{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -25,65 +28,12 @@ body{
  }
  .cover{
     border-style: solid;
-    border-width: 5px;
+    border-color: white;
+    border-width: 4px;
     border-radius: 10%;
  }
-.cover:hover {
-        transform: translateY(-5px);
-        transition: transform 80ms;
+.cover:hover, .popular-song-name:hover {
+    color: #7827e7;
+    border-color: #7827e7;
 }
 
-
-/* Song Details Container */
-.song-details-container {
-    width: 25%;
-    height: 100vh;
-    position: fixed;
-    right: 0;
-    top: 0;
-    background-color: #7827e7;
-    padding: 20px;
-    overflow-y: auto;
-    display: none;
-    transition: transform 0.1s ease-in-out;
-}
-
-.close-button{
-    width: 1.5rem; 
-}
-
-.close-button:hover{
-    transform: translateY(-2px);
-}
-
-.song-image img {
-    width: 215px;
-    border-radius: 10px;
-}
-
-.song-details {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.song-details h1 {
-    font-size: 28px;
-    margin: 10px 0;
-    color: #000000;
-}
-
-.song-details h3 {
-    font-size: 22px;
-    margin: 5px 0;
-    color: rgb(147, 142, 142);
-}
-
-.song-audio {
-    margin-top: 20px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.song-audio audio {
-    width: 100%;
-}
