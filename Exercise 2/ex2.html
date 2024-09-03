@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Groovy</title>
     <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
-    <link rel="stylesheet" href="ex2.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
     <style>
         .popular-section{
             padding: 1rem;
@@ -156,7 +157,9 @@
 
     <!-- Right-side Song Details Container -->
     <div id="song-details-container" class="song-details-container">
-        <button class="close-button" onclick="closeSongDetails()">close</button>
+        <div>
+            <img class="close-button" onclick="closeSongDetails()" src="./images/arrow-left-square-fill.svg" alt="back">
+        </div>
         <div class="song-image">
             <img id="song-cover" src="" alt="Song Cover" style="width: 100%;">
         </div>
@@ -172,16 +175,13 @@
 
     <script>
     function showSongDetails(title, artist, image) {
-        // Update song details
         document.getElementById('song-title').textContent = title.replace(/_/g, ' ');
         document.getElementById('song-artist').textContent = artist.replace(/_/g, ' ');
         document.getElementById('song-cover').src = image;
-        document.getElementById('song-audio').src = "https://pagalnew.com.se/files/download/id/2016"; // Update with actual audio URL if available
+        document.getElementById('song-audio').src = "https://pagalnew.com.se/files/download/id/2016";
 
-        // Show the song details container
         document.getElementById('song-details-container').style.display = 'block';
 
-        // Adjust the margin of the body
         const bodyElement = document.querySelector('.body');
         if (bodyElement) {
             bodyElement.style.marginRight = '25%';
@@ -199,6 +199,8 @@
         }
     }
     </script>
+
+    <script src="index.js"></script>
 
 </body>
 </html>
