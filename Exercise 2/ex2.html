@@ -33,6 +33,7 @@
         <!-- header -->
         <div class="header">
             <h2>Groovy</h2>
+            <!-- <img style="width: 250px;" src="./images/png/logo-no-background.png" alt="Groovy"> -->
         </div>
         <br>
         
@@ -188,8 +189,10 @@
     }
 
     function closeSongDetails() {
+        // Hide the song details container
         document.getElementById('song-details-container').style.display = 'none';
 
+        // Reset the margin of the body
         const bodyElement = document.querySelector('.body');
         if (bodyElement) {
             bodyElement.style.marginRight = '0';
