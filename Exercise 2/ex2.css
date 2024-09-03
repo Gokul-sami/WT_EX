@@ -45,35 +45,34 @@ body{
     position: fixed;
     right: 0;
     top: 0;
-    background-color: #ffffff;
+    background-color: #7827e7;
     padding: 20px;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
-    z-index: 1000;
-    display: none; /* Hidden by default, will be shown with JS */
-    transition: transform 0.3s ease-in-out;
+    display: none;
+    transition: transform 0.1s ease-in-out;
 }
 
 /* Close Button */
 .close-button {
-    background-color: #ff0000;
+    background-color: rgb(152, 144, 144);
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     float: right;
+
 }
 
 .close-button:hover {
-    background-color: #cc0000;
+    background-color: #ff0000;
 }
 
 /* Song Image */
 .song-image img {
-    width: 100%;
+    width: 215px;
     border-radius: 10px;
 }
 
@@ -86,22 +85,22 @@ body{
 .song-details h1 {
     font-size: 28px;
     margin: 10px 0;
-    color: #333;
+    color: #000000;
 }
 
 .song-details h3 {
     font-size: 22px;
     margin: 5px 0;
-    color: #777;
+    color: rgb(147, 142, 142);
 }
 
 /* Song Audio Player */
 .song-audio {
     margin-top: 20px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .song-audio audio {
     width: 100%;
-    outline: none;
 }
