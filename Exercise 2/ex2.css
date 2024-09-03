@@ -4,10 +4,6 @@ body{
 .header{
     text-align: center;
     padding: 10px;
-    /* background-color: rgb(255 255 255 / 30%); */
-}
-.popular-section{
-    /* background-color: rgb(255 255 255 / 30%); */
 }
 .popular-songs{
     display: flex;
