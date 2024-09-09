@@ -31,6 +31,7 @@ body{
     border-color: white;
     border-width: 4px;
     border-radius: 10%;
+    transition: border-color 0.3s;
  }
 .cover:hover, .popular-song-name:hover {
     color: #7827e7;

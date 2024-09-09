@@ -10,7 +10,6 @@ body {
     padding: 0 10px;
 }
 .header {
-    text-align: center;
     padding: 10px;
 }
 .header h2 {
@@ -44,8 +43,8 @@ body {
     border-radius: 10%;
     transition: border-color 0.3s;
 }
-.cover:hover {
-    border-color: #7827e7;
+.popular-song-name{
+    font-size: 1.5em;
 }
 .popular-song-name, .popular-singer-name {
     color: white;
@@ -62,3 +61,4 @@ body {
 a {
     text-decoration: none;
 }
+
