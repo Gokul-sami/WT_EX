@@ -1,0 +1,30 @@
+body{
+    padding: 20px;
+    background-image: url("https://media1.giphy.com/media/hTg523r3vGWcoHrQgu/200w.webp?cid=ecf05e47u7qj7oc13tty493c76shnnsnaq27nuis0fmreefz&ep=v1_gifs_related&rid=200w.webp&ct=g");
+}
+
+h1{
+    text-align: center;
+    color: #b682ff;
+    font-size: 4em;
+    margin-top: 100px;
+
+}
+
+.form{
+    width: 40%;
+    margin-left: 30%;
+    background-color: #a869ff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form-label, .form-check-label{
+    color: white;
+    font-size: 1.5em;
+}
+
+.form-check{
+    display: flex;
+    gap: 2px;
+}
