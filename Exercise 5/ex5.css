@@ -28,3 +28,7 @@ h1{
     display: flex;
     gap: 2px;
 }
+
+.btn{
+    float: center;
+}
