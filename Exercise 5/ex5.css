@@ -1,34 +1,14 @@
 body{
-    padding: 20px;
-    background-image: url("https://media1.giphy.com/media/hTg523r3vGWcoHrQgu/200w.webp?cid=ecf05e47u7qj7oc13tty493c76shnnsnaq27nuis0fmreefz&ep=v1_gifs_related&rid=200w.webp&ct=g");
+    width: 100%;
+    height: 100vh;
 }
-
-h1{
-    text-align: center;
-    color: #b682ff;
-    font-size: 4em;
-    margin-top: 100px;
-
-}
-
-.form{
-    width: 40%;
-    margin-left: 30%;
-    background-color: #a869ff;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.form-label, .form-check-label{
-    color: white;
-    font-size: 1.5em;
-}
-
-.form-check{
+.main{
     display: flex;
-    gap: 2px;
+    justify-content: center;
+    align-items: center;
 }
-
-.btn{
-    float: center;
+h1{
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: bolder;
+    font-size: 100px;
 }
