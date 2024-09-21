@@ -1,5 +1,5 @@
 function changeColor() {
-    document.body.style.backgroundColor = 'hotpink';
+    document.body.style.backgroundColor = 'red';
 }
 
 
