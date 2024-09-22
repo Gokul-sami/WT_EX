@@ -1,14 +1,93 @@
-body{
-    width: 100%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #90EE90, #ADD8E6, #E6E6FA);
     height: 100vh;
-}
-.main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    color: #333;
+    transition: background 1s;
 }
-h1{
-    font-family: "Protest Guerrilla", sans-serif;
-    font-weight: bolder;
-    font-size: 100px;
+
+.container, .cursor-container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.time-btn {
+    padding: 10px 20px;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.time-btn:hover {
+    background-color: #FFC300;
+}
+
+.box {
+    width: 300px;
+    height: 150px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.hover-paragraph {
+    padding: 10px;
+    background-color: #FFD700;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.hover-paragraph:hover {
+    background-color: #FFC300;
+}
+
+.image-container {
+    position: relative;
+    margin-top: 20px;
+    text-align: center; /* Center the image and text */
+}
+
+#hoverImage {
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+#hoverText {
+    display: none; /* Initially hidden */
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px; /* Space below the image */
+}
+
+.image-container:hover #hoverImage {
+    transform: translateY(20px); /* Move down when hovered */
+}
+
+.image-container:hover #hoverText {
+    display: block; /* Show text when hovering */
 }

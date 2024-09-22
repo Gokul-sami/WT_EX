@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercise 4.b</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Protest+Guerrilla&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="ex4_2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex4_2.css">
+    <title>Interactive Song Website</title>
 </head>
-<body onclick="changeColor()">
-  <div class="main">
-    <h1>The Red Room</h1>
-    
-  </div>
+<body>
+    <div class="container">
+        <h1>Interactive Song Experience</h1>
+        <button id="timeButton" class="time-btn">Show Current Time</button>
+        <p id="timeDisplay" class="time-display"></p>
+    </div>
 
-  <script src="ex4_2.js"></script>
+    <div class="cursor-container">
+        <h2 id="cursorStatus">Enjoy the rhythm of your favorite songs!</h2>
+        <div class="box">
+            <p id="hoverParagraph" class="hover-paragraph">Hover over me!</p>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <p id="hoverText">Your hover text here</p>
+        <img id="hoverImage" src="./images/heart.jpeg" alt="Your Image" />
+    </div>
+
+    <script src="ex4_2.js"></script>
 </body>
 </html>

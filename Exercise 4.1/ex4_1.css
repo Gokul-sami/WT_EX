@@ -1,29 +1,88 @@
-body{
-    padding: 20px;
-}
-
-.main{
+/* Make sure the body takes full viewport height */
+body {
+    margin: 0;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(270deg, #fcb69f, #ffeb3b, #8ec5fc, #e0c3fc);
+    background-size: 800% 800%;
+    animation: moveBackground 20s ease infinite;
 }
 
-.left{
-    width: 40%;
+/* Keyframes for the moving background */
+@keyframes moveBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-.left img{
+/* Container for video and form */
+.container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow wrapping for mobile */
+}
+
+/* Floating video container */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px; /* Adjust as needed */
+    margin: 20px;
+}
+
+.song-gif {
     width: 100%;
 }
 
-.right{
-    width: 60%;
-    padding: 5%;
-    background-color: #b682ff;
+/* Center the form with a blur effect */
+.form-container {
+    flex: 1; /* Take remaining space */
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
 }
 
+h2 {
+    color: black;
+}
 
+/* Override Bootstrap styles for black text */
+label, input, select {
+    color: black;
+}
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .video-container {
+        order: 1; /* Ensure video appears above on mobile */
+        margin: 0 auto; /* Center it */
+    }
+    .form-container {
+        order: 2; /* Ensure form appears below on mobile */
+        margin: 0 auto; /* Center it */
+    }
+}
 
+.message {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #555;
+    display: none;
+}
 
+/* Add the shake animation */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
 
+.shake {
+    animation: shake 0.5s;
+}
