@@ -12,6 +12,7 @@ body {
     text-align: center;
     border-radius: 10%;
     margin: 20px 0;
+    margin-bottom: 40px;
 }
 
 h1 {
@@ -45,18 +46,17 @@ h1 {
 }
 
 .hover-paragraph {
-    padding: 10px;
     border-radius: 10px;
     transition: background-color 0.3s;
 }
 
 .image-container {
     position: relative;
-    /* margin-top: 20px; */
     text-align: center;
 }
 
 #hoverImage {
+    border-radius: 10%;
     width: 200px;
     transition: transform 0.3s;
 }
@@ -65,16 +65,9 @@ h1 {
     display: none;
     position: relative;
     background: rgba(255, 255, 255, 0.8);
-    /* padding: 5px; */
     border-radius: 5px;
-    margin-top: 10px;
 }
 
-.image-container:hover #hoverImage {
-    transform: translateY(20px);
+.image-container:hover{
+    transform: translateY(10px);
 }
-
-
-
-
-
