@@ -1,10 +1,15 @@
-document.getElementById('timeButton').addEventListener('click', function() {
+function time() {
     setInterval(updateTime, 1000);
-});
+}
 
 function updateTime() {
     const now = new Date();
     document.getElementById('timeDisplay').textContent = now.toLocaleTimeString();
+    document.getElementById('timeDisplay').style.fontSize = "3rem";
+    document.getElementById('timeDisplay').style.backgroundColor = "#7827e7";
+    document.getElementById('timeDisplay').style.color = "black";
+    document.getElementById('timeDisplay').style.padding = "10px";
+    document.getElementById('timeDisplay').style.borderRadius = "10px";
 }
 
 // Cursor hover effects
@@ -28,7 +33,7 @@ hoverImage.onmouseleave = () => {
     hoverText.style.display = 'none';
 };
 
-// Background color change on click
+// Background color change
 document.body.onclick = () => {
     document.body.style.background = "black";
 };
