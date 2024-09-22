@@ -1,73 +1,59 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #90EE90, #ADD8E6, #E6E6FA);
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    color: #333;
-    transition: background 1s;
+    color: #7827e7;
 }
 
 .container, .cursor-container {
+    width: 80%;
     text-align: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 15px;
-    margin: 10px 0;
+    border-radius: 10%;
+    margin: 20px 0;
 }
 
 h1 {
     font-size: 2.5em;
-    color: #FFD700;
+    color: #7827e7;
     text-shadow: 2px 2px 4px #000;
+    margin-bottom: 20px;
 }
 
 .time-btn {
     padding: 10px 20px;
-    background-color: #FFD700;
+    background-color: #7827e7;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
+    /* transition: background 0.3s; */
 }
 
 .time-btn:hover {
-    background-color: #FFC300;
+    background-color: #7827e7;
 }
 
 .box {
-    width: 300px;
-    height: 150px;
-    border: 2px solid white;
+    border-radius: 10px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 10px auto;
+}
+
+.box:hover {
+    transform: translateY(-5px);
 }
 
 .hover-paragraph {
     padding: 10px;
-    background-color: #FFD700;
     border-radius: 10px;
     transition: background-color 0.3s;
 }
 
-.hover-paragraph:hover {
-    background-color: #FFC300;
-}
-
 .image-container {
     position: relative;
-    margin-top: 20px;
-    text-align: center; /* Center the image and text */
+    /* margin-top: 20px; */
+    text-align: center;
 }
 
 #hoverImage {
@@ -76,18 +62,19 @@ h1 {
 }
 
 #hoverText {
-    display: none; /* Initially hidden */
+    display: none;
     position: relative;
     background: rgba(255, 255, 255, 0.8);
-    padding: 5px;
+    /* padding: 5px; */
     border-radius: 5px;
-    margin-top: 10px; /* Space below the image */
+    margin-top: 10px;
 }
 
 .image-container:hover #hoverImage {
-    transform: translateY(20px); /* Move down when hovered */
+    transform: translateY(20px);
 }
 
-.image-container:hover #hoverText {
-    display: block; /* Show text when hovering */
-}
+
+
+
+

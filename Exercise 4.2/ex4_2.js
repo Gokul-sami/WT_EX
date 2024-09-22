@@ -19,16 +19,16 @@ const hoverImage = document.getElementById('hoverImage');
 const hoverText = document.getElementById('hoverText');
 
 hoverImage.onmouseenter = () => {
-    hoverImage.style.transform = 'translateY(10px)'; // Move image down
-    hoverText.style.display = 'block'; // Show hover text
+    hoverImage.style.transform = 'translateY(10px)';
+    hoverText.style.display = 'block';
 };
 
 hoverImage.onmouseleave = () => {
-    hoverImage.style.transform = 'translateY(0)'; // Move image back
-    hoverText.style.display = 'none'; // Hide hover text
+    hoverImage.style.transform = 'translateY(0)';
+    hoverText.style.display = 'none';
 };
 
-// One-time gradient color change
+// Background color change on click
 document.body.onclick = () => {
-    document.body.style.background = "red";
+    document.body.style.background = "black";
 };
