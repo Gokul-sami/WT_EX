@@ -18,7 +18,6 @@ body {
 
 h2{
     text-align: center;
-    font-family: "Jacques Francois Shadow", serif;
     font-size: 3rem;
     margin-bottom: 30px;
     margin-top: 30px;
@@ -49,32 +48,10 @@ h2{
 
 .form-group label{
     font-size: 1.3rem;
-    font-family: "Jacques Francois Shadow", serif;
 }
 
 .form-group{
-    margin-bottom: 30px;
-}
-
-h2 {
-    color: black;
-}
-
-/* Override Bootstrap styles for black text */
-label, input, select {
-    color: black;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .video-container {
-        order: 1; /* Ensure video appears above on mobile */
-        margin: 0 auto; /* Center it */
-    }
-    .form-container {
-        order: 2; /* Ensure form appears below on mobile */
-        margin: 0 auto; /* Center it */
-    }
+    margin-bottom: 20px;
 }
 
 .message {
@@ -84,7 +61,6 @@ label, input, select {
     display: none;
 }
 
-/* Add the shake animation */
 @keyframes shake {
     0% { transform: translateX(0); }
     25% { transform: translateX(-5px); }
