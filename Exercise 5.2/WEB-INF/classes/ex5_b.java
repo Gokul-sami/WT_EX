@@ -57,7 +57,7 @@ public class ex5_b extends HttpServlet {
                 out.println("<h2 style='color:green;'>Form submitted successfully!</h2>");
             }
 
-            out.println("</div>"); // Close container div
+            out.println("</div>"); 
             out.println("</body></html>");
         } 
         finally {
