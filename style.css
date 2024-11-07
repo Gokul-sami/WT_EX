@@ -59,4 +59,9 @@ h1{
 
 #repo{
     background-color: red;
+    color: black;
+}
+
+#repo:hover{
+    color: red;
 }
