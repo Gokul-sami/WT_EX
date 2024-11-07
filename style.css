@@ -32,7 +32,7 @@ h1{
     gap: 10px;
 }
 
-.sub a, .dropdown-content a {
+.sub a, .dropdown-content a, #repo {
     text-decoration: none;
     font-size: 20px;
     padding: 10px;
@@ -57,3 +57,6 @@ h1{
     display: none;
 }
 
+#repo{
+    color: red;
+}
