@@ -4,89 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Song Listening App</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: linear-gradient(to right, #9dff00, #ff00ee, rgb(11, 214, 255), yellow, red);
-            color: #333;
-        }
-        .container {
-            display: flex;
-            width: 80%;
-            height: 80vh;
-            background-color: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-        }
-        .left-section {
-            flex: 1;
-            background-image: url('./Exercise 5 servlet/images/output-onlinegiftools.gif');
-            background-size: cover;
-            background-position: center;
-        }
-        .right-section {
-            flex: 1;
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #f8f9fa;
-            border-radius: 12px;
-        }
-        .question {
-            font-size: 1.4em;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #555;
-            text-align: center;
-        }
-        .input-group {
-            width: 100%;
-            margin-bottom: 15px;
-        }
-        .input-group input {
-            width: 100%;
-            padding: 10px;
-            font-size: 1em;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin-top: 8px;
-        }
-        .button {
-            margin-top: 30px;
-            padding: 12px 24px;
-            font-size: 1em;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .button:hover {
-            background-color: #45a049;
-        }
-        .progress-bar {
-            width: 100%;
-            height: 5px;
-            background-color: #ddd;
-            margin-bottom: 20px;
-            border-radius: 2px;
-        }
-        .progress-bar-inner {
-            height: 100%;
-            width: 0;
-            background-color: #4CAF50;
-            transition: width 0.3s ease;
-        }
-    </style>
+    <link rel="stylesheet" href="./Exercise 5 servlet/styles/ex5_b.css">
 </head>
 <body>
     <div class="container">
@@ -97,71 +15,62 @@
             </div>
             <form id="questionForm" action="http://localhost:8080/Tomcat-webapps/QuestionServlet" method="POST">
                 <div id="questionContainer">
-                    <!-- Questions will appear here -->
+                    <!-- Questions will appear here, all loaded at once -->
                 </div>
                 <div id="hiddenInputs">
                     <!-- Hidden inputs to accumulate answers -->
                 </div>
-                <button type="button" class="button" onclick="handleNextQuestion()">Next</button>
-                <button type="submit" class="button" style="display:none;">Submit</button>
+                <button type="submit" class="button" id="submitButton">Submit</button>
             </form>
         </div>
     </div>
 
     <script>
         const questions = [
-            { text: "What's your name?", inputType: "text", name: "userName", placeholder: "Enter your name" },
-            { text: "How old are you?", inputType: "number", name: "userAge", placeholder: "Enter your age" },
-            { text: "What's your favorite music genre?", inputType: "text", name: "musicGenre", placeholder: "Enter your favorite music genre" },
-            { text: "Do you prefer live performances?", inputType: "text", name: "livePerformance", placeholder: "Yes or No" },
-            { text: "How frequently do you listen to music?", inputType: "text", name: "listeningFrequency", placeholder: "Daily, Weekly, Monthly, or Rarely" }
+            { text: "What name would you like to be called?", inputType: "text", name: "userName", placeholder: "Enter your name" },
+            { text: "What is your email?", inputType: "text", name: "userEmail", placeholder: "Enter your email" },
+            { text: "Create a password", inputType: "password", name: "userPassword", placeholder: "Enter a password" },
+            { text: "How old are you?", inputType: "number", name: "userAge", placeholder: "Enter your age", min: "0", max: "120" },
+            { text: "What's your favorite genre?", inputType: "select", name: "musicGenre", options: ["Pop", "Rock", "Jazz", "Classical", "Hip-Hop"] }
         ];
-    
-        let currentQuestionIndex = 0;
-    
-        function loadQuestion() {
+
+        // Function to load all questions at once
+        function loadAllQuestions() {
             const questionContainer = document.getElementById('questionContainer');
-            const question = questions[currentQuestionIndex];
-            questionContainer.innerHTML = `
-                <div class="question">${question.text}</div>
-                <div class="input-group">
-                    <input type="${question.inputType}" name="${question.name}" placeholder="${question.placeholder}" required>
-                </div>
-            `;
+            questionContainer.innerHTML = '';  // Clear existing questions
+
+            questions.forEach((question) => {
+                let questionHTML = `<div class="question">${question.text}</div><div class="input-group">`;
+                
+                if (question.inputType === "select") {
+                    questionHTML += `<select name="${question.name}" required>`;
+                    question.options.forEach(option => {
+                        questionHTML += `<option value="${option}">${option}</option>`;
+                    });
+                    questionHTML += `</select>`;
+                } else {
+                    questionHTML += `<input type="${question.inputType}" name="${question.name}" placeholder="${question.placeholder}" ${question.min ? `min="${question.min}"` : ''} ${question.max ? `max="${question.max}"` : ''} required>`;
+                }
+                questionHTML += `</div>`;
+                questionContainer.innerHTML += questionHTML;
+            });
+
+            // Update the progress bar once all questions are loaded
             updateProgressBar();
         }
-    
+
+        // Function to update the progress bar
         function updateProgressBar() {
             const progressBar = document.getElementById('progressBar');
-            const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
+            const progress = (questions.length / questions.length) * 100;
             progressBar.style.width = `${progress}%`;
         }
-    
-        function handleNextQuestion() {
-            const input = document.querySelector(".input-group input");
-            if (!input.checkValidity()) {
-                input.reportValidity();
-                return;
-            }
-    
-            // Save current answer in a hidden field
-            const hiddenInputs = document.getElementById("hiddenInputs");
-            const hiddenInput = document.createElement("input");
-            hiddenInput.type = "hidden";
-            hiddenInput.name = input.name;
-            hiddenInput.value = input.value;
-            hiddenInputs.appendChild(hiddenInput);
-    
-            currentQuestionIndex++;
-            if (currentQuestionIndex < questions.length) {
-                loadQuestion();
-            } else {
-                document.querySelector("button[type='submit']").style.display = 'block';
-                document.querySelector("button[type='button']").style.display = 'none';
-            }
-        }
-    
-        loadQuestion();
+
+        // Load all questions when the page loads
+        window.onload = function() {
+            loadAllQuestions();
+        };
     </script>
+    
 </body>
 </html>
