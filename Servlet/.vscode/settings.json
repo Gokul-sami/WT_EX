@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": [
+        "WEB-INF\\classes"
+    ],
+    "java.project.referencedLibraries": [
+        "c:\\xampp\\tomcat\\lib\\servlet-api.jar"
+    ]
+}
