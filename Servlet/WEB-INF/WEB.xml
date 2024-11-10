@@ -1,0 +1,110 @@
+<web-app>
+    
+    <servlet>
+        <servlet-name>servletDemo</servlet-name>
+        <servlet-class>UserDetailsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servletDemo</servlet-name>
+        <url-pattern>/result</url-pattern>
+    </servlet-mapping>
+    <!--  -->
+    <servlet>
+        <servlet-name>deathPredictor</servlet-name>
+        <servlet-class>DoOrDie</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>deathPredictor</servlet-name>
+        <url-pattern>/deathWish</url-pattern>
+    </servlet-mapping>
+
+    <!-- Program p12_db1.java -->
+    <servlet>
+        <servlet-name>p12_db1</servlet-name>
+        <servlet-class>p12_db1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>p12_db1</servlet-name>
+        <url-pattern>/db1</url-pattern>
+    </servlet-mapping>
+
+    <!-- Program p12_db2.java -->
+    <servlet>
+        <servlet-name>p12_db2</servlet-name>
+        <servlet-class>p12_db2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>p12_db2</servlet-name>
+        <url-pattern>/db2</url-pattern>
+    </servlet-mapping>
+
+    <!-- Program p12_db3.java -->
+    <servlet>
+        <servlet-name>p12_db3</servlet-name>
+        <servlet-class>p12_db3</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>p12_db3</servlet-name>
+        <url-pattern>/db3</url-pattern>
+    </servlet-mapping>
+
+    <!-- Hello -->
+    <servlet>
+        <servlet-name>HelloWorld</servlet-name>
+        <servlet-class>Hello</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloWorld</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <!-- Form ex 5b -->
+    <servlet>
+        <servlet-name>Serveform</servlet-name>
+        <servlet-class>ex5_b</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Serveform</servlet-name>
+        <url-pattern>/formServe</url-pattern>
+    </servlet-mapping>
+    
+    <!-- ex5 b -->
+    <servlet>
+        <servlet-name>QuestionServlet</servlet-name>
+        <servlet-class>ex5_b</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QuestionServlet</servlet-name>
+        <url-pattern>/QuestionServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ex5 c -->
+    <servlet>
+        <servlet-name>QuestionServletc</servlet-name>
+        <servlet-class>ex5_c</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QuestionServletc</servlet-name>
+        <url-pattern>/QuestionServletc</url-pattern>
+    </servlet-mapping>
+
+    <!-- ex5 c home -->
+    <servlet>
+        <servlet-name>QuestionServletchome</servlet-name>
+        <servlet-class>ex5_chome</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QuestionServletchome</servlet-name>
+        <url-pattern>/QuestionServletchome</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+
+
