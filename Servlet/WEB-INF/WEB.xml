@@ -85,24 +85,94 @@
         <url-pattern>/QuestionServlet</url-pattern>
     </servlet-mapping>
 
-    <!-- ex5 c -->
+    <!-- ex5 c cookie-->
     <servlet>
-        <servlet-name>QuestionServletc</servlet-name>
-        <servlet-class>ex5_c</servlet-class>
+        <servlet-name>QuestionServletc1</servlet-name>
+        <servlet-class>ex5_c_1_cookie</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>QuestionServletc</servlet-name>
-        <url-pattern>/QuestionServletc</url-pattern>
+        <servlet-name>QuestionServletc1</servlet-name>
+        <url-pattern>/QuestionServletc1</url-pattern>
     </servlet-mapping>
 
-    <!-- ex5 c home -->
+    <!-- ex5 c home cookie -->
     <servlet>
-        <servlet-name>QuestionServletchome</servlet-name>
-        <servlet-class>ex5_chome</servlet-class>
+        <servlet-name>QuestionServletc1home</servlet-name>
+        <servlet-class>ex5_chome_1_cookie</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>QuestionServletchome</servlet-name>
-        <url-pattern>/QuestionServletchome</url-pattern>
+        <servlet-name>QuestionServletc1home</servlet-name>
+        <url-pattern>/QuestionServletc1home</url-pattern>
+    </servlet-mapping>
+
+    <!-- ex5 c httpsession -->
+    <servlet>
+        <servlet-name>QuestionServletc2</servlet-name>
+        <servlet-class>ex5_c_2_httpsession</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QuestionServletc2</servlet-name>
+        <url-pattern>/QuestionServletc2</url-pattern>
+    </servlet-mapping>
+
+    <!-- ex5 c home httpsession -->
+    <servlet>
+        <servlet-name>QuestionServletc2home</servlet-name>
+        <servlet-class>ex5_chome_2_httpsession</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QuestionServletc2home</servlet-name>
+        <url-pattern>/QuestionServletc2home</url-pattern>
+    </servlet-mapping>
+
+    <!-- ex5 c url -->
+    <servlet>
+        <servlet-name>QuestionServletc3</servlet-name>
+        <servlet-class>ex5_c_3_url_rewriting</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QuestionServletc3</servlet-name>
+        <url-pattern>/QuestionServletc3</url-pattern>
+    </servlet-mapping>
+
+    <!-- ex5 c home url -->
+    <servlet>
+        <servlet-name>QuestionServletc3home</servlet-name>
+        <servlet-class>ex5_chome_3_url_rewriting</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QuestionServletc3home</servlet-name>
+        <url-pattern>/QuestionServletc3home</url-pattern>
+    </servlet-mapping>
+
+    <!-- ex5 c hidden -->
+    <servlet>
+        <servlet-name>QuestionServletc4</servlet-name>
+        <servlet-class>ex5_c_4_hidden</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QuestionServletc4</servlet-name>
+        <url-pattern>/QuestionServletc4</url-pattern>
+    </servlet-mapping>
+
+    <!-- ex5 c home hidden -->
+    <servlet>
+        <servlet-name>QuestionServletc4home</servlet-name>
+        <servlet-class>ex5_chome_4_hidden</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QuestionServletc4home</servlet-name>
+        <url-pattern>/QuestionServletc4home</url-pattern>
+    </servlet-mapping>
+
+    <!-- ex5 d -->
+    <servlet>
+        <servlet-name>QuestionServletd</servlet-name>
+        <servlet-class>ex5_d</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QuestionServletd</servlet-name>
+        <url-pattern>/QuestionServletd</url-pattern>
     </servlet-mapping>
 
 </web-app>
